@@ -11,11 +11,17 @@ body {
 .content {
 	text-align: center;
 	position: relative;
-	width:  700px;
+	width:  50%;
 	text-align: justify;
 	margin:  0 auto;
 	padding-top:  75px;
 	padding-bottom:  800px;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+  	width:  90%;
+  }
 }
 
 
