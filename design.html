@@ -1,21 +1,177 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
-	<link rel="stylesheet" type="text/css" href="./normalize.css">
-	<link rel="stylesheet" type="text/css" href="./index.css">
-	<title>Daniel Park - Product Designer</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="Studio Embed">
+<meta property="og:description" content="Product design studio.">
+<!-- <meta property="og:image" content="./logo.jpg"> -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="core.css">
+<link rel="stylesheet" type="text/css" href="table.css">
+<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<title>daniel park.</title>
 </head>
 <body>
-<div class="content">
-	<p>As a interface designer I am currently designing interface toys at <a href="untitledinbrackets.com" target="_blank">[untitled]</a> ↓</p>
-	<img src="./img/untitled.jpg" style="width:300px;">
 
-	<p>But I used to design interface toys at <a href="univer.se" target="_blank">univer.se</a> ↓</p>
-	<video src="./img/universe.mp4" autoplay loop style="width:300px;">
-</div>
+	<video id="hoverVideo" style="position: absolute; width: 150px; height: 100px; display: none; pointer-events: none;" muted autoplay loop>
+		<source src="your-video.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
 
-</video>
+	<div class="content-container">
+		<div class="text-container">
+			<h1>Daniel Park</h1>
+			<h2 class="gray">I am a product designer who focuses on novel interactions, fluid interface paradigms, and intuitive user experiences. I design by asking <i>why</i> an interface works from principles instead of asking <i>what</i> interface works via metrics.</h2>
+			<br>
+			<h2 class="gray"><a href="mailto:hi@dparkd.com">email</a></h2>
+			<br>
+		</div>
+
+		<div class="text-container">
+			<h2 class="gray">Select Projects:</h2>
+			<br>
+		</div>
+
+		<table>
+			<tr>
+				<th>Company</th>
+				<th>Title</th>
+				<th>Type</th>
+				<th>Contributions</th>
+				<th class="right"> </th>
+			</tr>
+
+			<tr id="embed" data-url="./projects/embed/index.html" class="project">
+				<td>Studio Embed.</td>
+				<td>Principle Designer</td>
+				<td>Design Agency</td>
+				<td>$150k+ Revenue + interface innovation for 5 companies</td>
+				<td class="right">View Project</td>
+			</tr>
+
+			<tr id="untitled" data-url="./projects/untitled/index.html" class="project">
+				<td>[untitled]</td>
+				<td>Founding Designer</td>
+				<td>0->1  Product</td>
+				<td>300k+ user growth, Revenue, $16M Series B</td>
+				<td class="right">View Project</td>
+			</tr>
+
+			<tr id="typo" data-url="./projects/typo" class="project">
+				<td>Typo*</td>
+				<td>Founding Designer</td>
+				<td>0->1  Product</td>
+				<td>MVP, interface innovation</td>
+				<td class="right">View Project</td>
+			</tr>
+
+			<tr id="universe" data-url="./projects/universe" class="project">
+				<td>Universe</td>
+				<td>Senior Designer</td>
+				<td>Platform upgrades</td>
+				<td>$30M Series B, Apple Design Award</td>
+				<td class="right">View Project</td>
+			</tr>
+
+			<tr id="meta" data-url="./projects/meta" class="project">
+				<td>Meta</td>
+				<td>Product Designer</td>
+				<td>0->1 Product</td>
+				<td>$1M Daily Recurring Revenue</td>
+				<td class="right">View Project</td>
+			</tr>
+
+			<!-- <tr id="concepts" data-url="./projects/random" class="project">
+				<td>Random</td>
+				<td>Self</td>
+				<td>Design Experiements</td>
+				<td>Prototypes</td>
+				<td class="right">View Project</td>
+			</tr> -->
+		</table>
+
+
+		<br>
+
+
+		<div class="text-container">
+			<h2 class="gray">Select Research:</h2>
+			<br>
+		</div>
+
+		<table>
+			<tr>
+				<th>Title</th>
+				<th>Type</th>
+				<th>Abstract</th>
+				<th>Date</th>
+				<th class="right"> </th>
+			</tr>
+
+			<tr id="untitled" data-video="./exports/untitled1.mp4" class="research">
+				<td>Super Bubble.</td>
+				<td>Interface Paradigm</td>
+				<td>Design research on how to make iMessage more meaningful.</td>
+				<td>01.14.2025</td>
+				<td class="right">Read</td>
+			</tr>
+
+			<tr id="tabs" data-video="./exports/untitled1.mp4" data-url="./research/tabs/index.html" class="research">
+				<td>No More Tab Bars.</td>
+				<td>Design Principle</td>
+				<td>Opinion piece on why I think tab bars shouldn't be used in modern mobile applications. </td>
+				<td>08.08.2024</td>
+				<td class="right">Read</td>
+			</tr>
+		</table>
+	</div>
+
+<script type="text/javascript" src="project.js"></script>
+<script type="text/javascript" src="research.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

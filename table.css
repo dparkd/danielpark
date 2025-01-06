@@ -1,0 +1,38 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+td, th {
+    border-bottom: 1px solid black;
+    text-align: left;
+    padding: 8px 0;
+    font-size: 12pt;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+tr:hover {
+    cursor: pointer;
+}
+
+tr:hover td {
+    font-style: italic;
+    color: blue;
+}
+
+
+.intro {
+    padding: 8px;
+}
