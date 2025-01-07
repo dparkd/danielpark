@@ -32,6 +32,15 @@ tr:hover td {
     color: blue;
 }
 
+.disabled {
+    opacity: 0.5;
+}
+
+.disabled:hover td {
+    font-style: normal;
+    color: #191919;
+    cursor: auto;
+}
 
 .intro {
     padding: 8px;

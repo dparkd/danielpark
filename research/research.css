@@ -2,6 +2,10 @@
     margin: 0 auto;
 }
 
+h1 {
+    font-size: 15pt;
+}
+
 p {
     line-height: 24px;
     font-weight: 400;
