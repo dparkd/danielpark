@@ -106,3 +106,20 @@ img {
     height: auto;
 }
 
+@media only screen and (max-width: 600px) {
+	#sticky {
+		position: relative;
+        width: 100%;
+	}
+
+    .right {
+        width: 100%;
+        position: relative;
+        left: 0;
+        text-align: center;
+    }
+
+    .right video {
+        width: 100%;
+    }
+}
